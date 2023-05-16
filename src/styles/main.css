@@ -1,0 +1,504 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Lato;
+    transition: all 0.4s ease;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 60px;
+}
+
+.list_item a:hover {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #F26522;
+    transition: all 0.3s ease;
+
+}
+
+#main::after {
+    content: "";
+    background: url("../images/right.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    width: 550px;
+    height: 460px;
+    right: 0;
+    top: 0;
+    z-index: -999;
+
+}
+
+#tipografiya::after {
+    content: "";
+    background: url("../images/Subtract.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    width: 450px;
+    height: 770px;
+    right: 0;
+    top: 0;
+    z-index: -999;
+}
+
+.fon {
+    background: url("../images/background.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.xizmat::after {
+    content: "";
+    background: url("../images/Rectangle\ right.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    width: 330px;
+    height: 665px;
+    right: 0;
+    top: -130px;
+    z-index: -999;
+}
+
+.xizmat::before {
+    content: "";
+    background: url("../images/Rectangle\ left.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    width: 330px;
+    height: 665px;
+    bottom: -165px;
+    left: -15px;
+    z-index: -999;
+}
+
+.yutuq {
+    border-radius: 0 215px 0 0;
+}
+
+.boxs {
+    z-index: -9999;
+}
+
+.jamoa_item:hover {
+    background-color: #f4da7e;
+}
+
+.xizmat_img:hover {
+    z-index: -99;
+}
+
+.boxs:hover {
+    z-index: 99;
+}
+
+.sumka {
+    border-radius: 0 290px 0 0;
+
+    z-index: -9;
+}
+
+.xarita {
+    border-radius: 0 214px 0 0;
+
+}
+
+.menu_btn {
+    display: none;
+
+}
+
+/*  responsive */
+@media only screen and (max-width:1023px) {
+
+    section {
+        padding: 0 20px;
+    }
+
+    header .nav_ul {
+        position: absolute;
+        right: 0;
+        top: 80px;
+        height: 90vh;
+        background: white;
+        width: 50%;
+        z-index: 999;
+        transition: all 0.5s ease-in-out;
+
+    }
+.nav_b{
+    transform: translateX(100%);
+    padding: 30px 0;
+}
+   
+
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .menu_btn {
+        display: block;
+
+    }
+
+    .nav__list {
+        justify-content: space-around;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .w-left {
+        padding: 10px;
+        margin-top: 10px;
+        width: 100%;
+
+    }
+
+    .nav_btn {
+        width: 100%;
+        margin: 15px auto;
+
+    }
+
+    .wrapper {
+        margin-top: -130px;
+    }
+
+    .wrapper_text {
+        font-size: 26px;
+        margin-top: 10px;
+    }
+
+    .hozir {
+        font-size: 26px;
+    }
+
+    .wrap-img {
+        margin-top: 20px;
+        height: 240px;
+    }
+
+    .carusel_main {
+        height: 260px;
+        animation: animation_img 30s infinite;
+    }
+
+    .nav_tel {
+        margin-top: 20px;
+    }
+
+    .tel2 {
+        margin: 0;
+    }
+
+    #tipografiya {
+        margin-top: 50px;
+        padding: 10px;
+
+    }
+
+    #tipografiya::after {
+        content: "";
+        background: url("../images/Subtract.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        z-index: -999;
+    }
+
+    .span_img {
+        display: none;
+    }
+
+
+
+    .haqida {
+        font-size: 30px;
+    }
+
+    .top_text {
+        line-height: 25px;
+        font-size: 14px;
+    }
+
+    .eski_logo {
+        display: none;
+    }
+
+    .biz {
+        font-size: 30px;
+    }
+
+    .biz_sec {
+        margin-top: 50px;
+        padding: 30px 0;
+        padding-top: 30px;
+    }
+
+    .card6 {
+        margin-bottom: 50px;
+    }
+
+    #xizmatlar {
+        margin-top: 50px;
+    }
+
+    .biz_xiz {
+        font-size: 30px;
+    }
+
+    .imgs {
+        padding: 0 50px;
+        justify-items: center;
+    }
+
+    .sumka {
+        display: none;
+    }
+
+    #portfolio {
+        margin-top: 30px;
+        padding: 0;
+
+    }
+
+
+    .portfolio {
+        max-width: 100%;
+        padding: 20px;
+        height: 505px;
+        margin-top: 50px;
+    }
+
+    .icons {
+        margin-left: 0;
+        position: relative;
+        left: -20px;
+        margin: 0 auto;
+    }
+
+    .hover1 {
+        display: none;
+    }
+
+    .port_p {
+        padding: 0;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    #yutuqlar {
+        margin-top: 30px;
+    }
+
+    .yutuqlar_h {
+        font-size: 30px;
+    }
+
+    .yutuq {
+        width: 100%;
+        padding: 40px 0;
+        height: auto;
+
+    }
+
+    .ball {
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    .jamoa_item {
+        /* padding: 20px; */
+        width: 100%;
+        margin-top: 80px;
+
+    }
+
+    .jamoa_flex {
+        padding: 0;
+
+    }
+
+    #jamoa {
+        margin-top: 50px;
+    }
+
+    .xarita {
+        margin-top: 50px;
+        width: 100%;
+        height: 300px;
+        border-radius: 0 150px 0 0;
+    }
+
+    .footer_ul {
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .footer_link li {
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+
+    .footer_aloqa {
+        font-size: 25px;
+    }
+
+    .foooter_aloqa {
+        margin: 0;
+    }
+
+    .portfolio_carusel {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .carusel {
+        width: 100%;
+        overflow: hidden;
+
+
+    }
+
+    .none_blok {
+        display: none;
+    }
+
+    #jamoa {
+        overflow: hidden;
+    }
+
+    .carusel {
+        animation: animation_card 30s infinite;
+        display: flex;
+    }
+
+    @keyframes animation_card {
+        0% {
+            transform: translateX(0);
+        }
+
+        25% {
+            transform: translateX(-380px);
+        }
+
+        50% {
+            transform: translateX(-760px);
+        }
+
+        75% {
+            transform: translateX(-380px);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
+    @keyframes animation_img {
+        0% {
+            transform: translateY(0);
+        }
+
+        25% {
+            transform: translateY(-260px);
+        }
+
+        50% {
+            transform: translateY(-520px);
+        }
+
+        75% {
+            transform: translateY(-260px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .carusel {
+        animation: animation_card 30s infinite;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .map_main {
+        display: none;
+    }
+
+}
+
+.map {
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    width: 60px;
+    z-index: 999;
+
+    /* background-color: black; */
+}
+
+.map>button {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid silver;
+    position: relative;
+
+}
+
+.map>button.active::after {
+    background: #001d38;
+    content: "";
+    left: 0;
+    position: absolute;
+    border-radius: 100%;
+    top: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.map_main>button {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    border: 1px solid silver;
+    position: relative;
+}
+
+.map_main>button.active::after {
+    background: #001d38;
+    content: "";
+    left: 0;
+    position: absolute;
+    border-radius: 100%;
+    top: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.nav_active {
+    transform: translateX(0);
+    padding: 30px 0;
+}
